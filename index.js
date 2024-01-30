@@ -33,11 +33,11 @@ app.post("/login", urlEncodded, async(req,res)=>
 }
 else
 {
-    res.sendFile(__dirname+"/public/signup.html")
+    res.sendFile(__dirname+"/public/reg.html")
 }
 })
 
-app.post("/signup", urlEncodded, async(req,res)=>
+app.post("/reg", urlEncodded, async(req,res)=>
 {
     const result1= await coll.findOne({email:req.body.email,name:req.body.name})
     if (result1)
