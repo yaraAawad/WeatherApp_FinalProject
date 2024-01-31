@@ -2,7 +2,6 @@ import { useContext, createContext, useState, useEffect } from "react";
 import axios from 'axios'
 
 
-
 const StateContext = createContext()
 
 export const StateContextProvider = ({ children }) => {
@@ -23,7 +22,7 @@ export const StateContextProvider = ({ children }) => {
                 shortColumnNames: 0,
             },
             headers: {
-                'X-RapidAPI-Key': '6360193b61msh0e5e240b79b998bp12ce42jsn586cdd52bae5',
+                'X-RapidAPI-Key': '56d2870a57mshc26d7622883ba8dp1225aejsn82816279af48',
                 'X-RapidAPI-Host': 'visual-crossing-weather.p.rapidapi.com'
             }
         }
