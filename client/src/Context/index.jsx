@@ -14,7 +14,7 @@ export const StateContextProvider = ({ children }) => {
     const fetchWeather = async () => {
         const options = {
             method: 'GET',
-            url: 'https://open-weather13.p.rapidapi.com/city/amman',
+            url: 'https://visual-crossing-weather.p.rapidapi.com/forecast',
             params: {
                 aggregateHours: '24',
                 location: place,
@@ -24,7 +24,7 @@ export const StateContextProvider = ({ children }) => {
             },
             headers: {
                 'X-RapidAPI-Key': '6360193b61msh0e5e240b79b998bp12ce42jsn586cdd52bae5',
-                'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
+                'X-RapidAPI-Host': 'visual-crossing-weather.p.rapidapi.com'
             }
         }
 
